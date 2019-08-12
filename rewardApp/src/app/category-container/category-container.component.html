@@ -1,0 +1,8 @@
+<div class="category-container-title">Categories
+  <hr>
+</div>
+<div class="category-container-items">
+  <div *ngFor="let item of arr; let i = index" class="category-container-item">
+    <app-category [index1]= i [categoryArray] = getMyArray(i)></app-category>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+
+.category-container-title {
+    text-align: center;
+    width: 100%;
+    padding: 1% 0;
+    font-size: 20px;
+  }
+
+.category-container-items {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+app-category {
+  width: 100%;
+}
+
+.category-container-item {
+  width: 20%;
+  border-left: 1px solid #ad9d9d;
+
+}
+
+.category-container-item:first-child {
+  border-left: 1px solid transparent;
+}
+
+.category-container-item:first-child {
+  border-left: 1px solid transparent;
+}
+
+hr {
+  width: 98%;
+}

@@ -1,0 +1,15 @@
+<div class="category-container">
+  <div class="category-container-title">
+    <p>C{{index1 + 1}}</p>
+    <hr>
+  </div>
+  <div class="category-main" [id]= index1 (drop)="onDrop($event)" (dragover)="onAllowDrop($event)"> 
+    <div *ngFor="let item of categoryArray let i = index" class="add">
+      <div  class="category-item" class="selected-reward-item" [id] = i   draggable="true" (dragstart)="drag($event,item)" (dragover)="onAllowDrop($event)">
+        <span  class="delete-button" (click)="onClickButton(item)">X</span>
+        <p>{{item.name}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

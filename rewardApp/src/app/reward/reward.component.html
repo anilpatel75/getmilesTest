@@ -1,0 +1,10 @@
+<div class="reward-container-title">Rewards
+  <hr>
+</div>
+<div *ngIf="rewardArr" class="reward-container">
+  <div *ngFor="let item of rewardArr" class="reward-items">
+    <div class="reward-item" draggable="true" [id]="item.id" (dragstart)="drag($event)">
+      <p>{{item.name}}</p>
+    </div>
+  </div>
+</div>
